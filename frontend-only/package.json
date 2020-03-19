@@ -1,6 +1,0 @@
-{
-	"scripts": {
-		"start": "cd frontend && yarn start",
-		"install": "cd frontend && yarn"
-	}
-}

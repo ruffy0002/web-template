@@ -1,0 +1,21 @@
+{
+	"prettier.printWidth": 120,
+	"prettier.useTabs": true,
+	"prettier.tabWidth": 4,
+	"editor.formatOnSave": true,
+	"html.autoClosingTags": false,
+	"typescript.autoClosingTags": false,
+	"javascript.autoClosingTags": false,
+	"emmet.showExpandedAbbreviation": "never",
+	"editor.minimap.enabled": false,
+	"update.mode": "none",
+	"eslint.packageManager": "yarn",
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"editor.codeActionsOnSave": {
+		"source.fixAll.eslint": true,
+		"source.fixAll.stylelint": true
+	},
+	"css.validate": false,
+	"less.validate": false,
+	"scss.validate": false
+}

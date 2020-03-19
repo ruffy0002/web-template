@@ -1,0 +1,11 @@
+{
+	"scripts": {
+		"start": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\"",
+		"client": "cd frontend && yarn start",
+		"server": "cd backend && yarn start",
+		"install": "cd frontend && yarn && cd ../backend && yarn"
+	},
+	"devDependencies": {
+		"concurrently": "^5.1.0"
+	}
+}
