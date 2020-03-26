@@ -11,8 +11,9 @@ This project was designed to be used with VSCode. Please install the following e
 
 The following extensions are recommended as well:
 
-1. Close HTML/XML tag _by Compulim_
-2. React-Native/React/Redux snippets for es6/es7 _by EQuimper_ (equimper.react-native-react-redux, used v2.0.3)
+1. Close HTML/XML tag _by Compulim_ - Just to close html tags
+2. React-Native/React/Redux snippets for es6/es7 _by EQuimper_ (equimper.react-native-react-redux, used v2.0.3) - Shortcuts for frequently typed codes
+3. Automatic command performer _by Gabriel Woitechen_ (woitechen.auto-command-performer, used v1.0.0) - With this project's config, this runs yarn start when u open VSCode
 
 > ### Compilation Errors
 >
@@ -38,6 +39,7 @@ Besides those from the post, additional customization include
     - Default port 80
     - Setting src/ folder as the NODE_PATH
     - Default to no source maps generated (Without this turned off, your source code goes into production when packaged)
+    - Does not open browser on "start" being executed
 
 3. Removed CRA's default page (Cleaned up images used for this), replaced with BrowserRouter
 
@@ -49,5 +51,7 @@ Besides those from the post, additional customization include
 5. Stylelint (CSS Code smells, with rules turned off for prettier)
 
 6. Custom VSCode settings
+
+    - Inclusive of a setting to auto run "yarn start" if you install the 'Automatic Command Performer' VSCode extension
 
 7. Base page is default 100% height

@@ -1,0 +1,22 @@
+// Using Ctrl + E for Emmet. This file is not in effect. Copy this into your own VSCode keybindings file for usage
+[
+	{
+		"key": "ctrl+e",
+		"command": "editor.emmet.action.expandAbbreviation",
+		"when": "editorTextFocus"
+	},
+	{
+		"key": "ctrl+e",
+		"command": "-workbench.action.quickOpen"
+	},
+	{
+		"key": "ctrl+e",
+		"command": "-workbench.action.quickOpenNavigateNextInFilePicker",
+		"when": "inFilesPicker && inQuickOpen"
+	},
+	{
+		"key": "tab",
+		"command": "-editor.emmet.action.expandAbbreviation",
+		"when": "config.emmet.triggerExpansionOnTab && editorTextFocus && !editorReadonly && !editorTabMovesFocus"
+	}
+]
