@@ -1,0 +1,12 @@
+/* Start css names with the feature name (Can use short form) to avoid css name repeats */
+.hw-container {
+	height: 500px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.hw-hp-text {
+	color: cornflowerblue;
+}

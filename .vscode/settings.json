@@ -8,8 +8,6 @@
 	"javascript.autoClosingTags": false,
 	"emmet.showExpandedAbbreviation": "never",
 	"editor.minimap.enabled": false,
-	"update.mode": "none",
-	"eslint.packageManager": "yarn",
 	"editor.defaultFormatter": "esbenp.prettier-vscode",
 	"editor.codeActionsOnSave": {
 		"source.fixAll.eslint": true,
@@ -18,5 +16,5 @@
 	"css.validate": false,
 	"less.validate": false,
 	"scss.validate": false,
-	"commandrunner.commands": ["yarn start"]
+	"commandrunner.commands": ["yarn client", "yarn server"]
 }

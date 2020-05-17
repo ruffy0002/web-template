@@ -1,16 +1,15 @@
 import React from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
+import HelloWorld from "features/HelloWorld/components/HelloWorld";
 
-const Stud = () => <div />;
-
-const App = () => {
+const Router = () => {
 	return (
 		<BrowserRouter>
 			<Switch>
-				<Route path="/" component={Stud} />
+				<Route path="/" component={HelloWorld} />
 			</Switch>
 		</BrowserRouter>
 	);
 };
 
-export default App;
+export default Router;
