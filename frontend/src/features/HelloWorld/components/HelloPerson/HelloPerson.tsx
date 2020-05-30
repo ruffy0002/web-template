@@ -6,7 +6,7 @@ interface HelloPersonProps {
 	name?: string;
 }
 
-const HelloPerson = ({ name = "World" }: HelloPersonProps) => {
+const HelloPerson: React.FC<HelloPersonProps> = ({ name = "World" }: HelloPersonProps) => {
 	return <h1 className="hw-hp-text"> Hello {name}!</h1>;
 };
 

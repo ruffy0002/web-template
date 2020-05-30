@@ -16,5 +16,5 @@
 	"css.validate": false,
 	"less.validate": false,
 	"scss.validate": false,
-	"commandrunner.commands": ["yarn client", "yarn server"]
+	"commandrunner.commands": ["yarn fe", "yarn be"]
 }

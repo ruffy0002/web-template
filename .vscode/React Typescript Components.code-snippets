@@ -1,0 +1,52 @@
+{
+	"Typescript Stateless": {
+		"scope": "typescriptreact",
+		"prefix": "ts",
+		"body": ["const $TM_FILENAME_BASE: React.FC = () => (", "\t$0", ");", "", "export default $TM_FILENAME_BASE;"]
+	},
+	"Typescript Stateless Props": {
+		"scope": "typescriptreact",
+		"prefix": "tsp",
+		"body": [
+			"interface ${TM_FILENAME_BASE}Props {",
+			"\t$1",
+			"}",
+			"",
+			"const $TM_FILENAME_BASE: React.FC<${TM_FILENAME_BASE}Props> = ({$2}: ${TM_FILENAME_BASE}Props) => (",
+			"\t$0",
+			");",
+			"",
+			"export default $TM_FILENAME_BASE;"
+		]
+	},
+	"Typescript Stateless Return": {
+		"scope": "typescriptreact",
+		"prefix": "tsr",
+		"body": [
+			"const $TM_FILENAME_BASE: React.FC = () => {",
+			"\treturn (",
+			"\t\t$0",
+			"\t);",
+			"};",
+			"",
+			"export default $TM_FILENAME_BASE;"
+		]
+	},
+	"Typescript Stateless Return Props": {
+		"scope": "typescriptreact",
+		"prefix": "tsrp",
+		"body": [
+			"interface ${TM_FILENAME_BASE}Props {",
+			"\t$1",
+			"}",
+			"",
+			"const $TM_FILENAME_BASE: React.FC<${TM_FILENAME_BASE}Props> = ({$2}: ${TM_FILENAME_BASE}Props) => {",
+			"\treturn (",
+			"\t\t$0",
+			"\t);",
+			"};",
+			"",
+			"export default $TM_FILENAME_BASE;"
+		]
+	}
+}

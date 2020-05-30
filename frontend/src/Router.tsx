@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import HelloWorld from "features/HelloWorld/components/HelloWorld";
 
-const Router = () => {
+const Router: React.FC = () => {
 	return (
 		<BrowserRouter>
 			<Switch>

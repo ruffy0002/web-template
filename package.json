@@ -1,17 +1,21 @@
 {
-    "name": "web-template",
-    "private": true,
-    "workspaces": [
-        "frontend",
-        "backend",
-        "shared"
-    ],
-    "scripts": {
-        "start-all": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\"",
-        "client": "cd frontend && yarn start",
-        "server": "cd backend && yarn start"
-    },
-    "devDependencies": {
-        "concurrently": "^5.1.0"
-    }
+	"name": "web-template",
+	"private": true,
+	"workspaces": [
+		"frontend",
+		"backend",
+		"shared"
+	],
+	"scripts": {
+		"start-all": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\"",
+		"lint": "run-p lint-fe lint-be",
+		"lint-fe": "cd frontend && yarn lint",
+		"lint-be": "cd backend && yarn lint",
+		"fe": "cd frontend && yarn start",
+		"be": "cd backend && yarn start"
+	},
+	"devDependencies": {
+		"concurrently": "^5.1.0",
+		"npm-run-all": "^4.1.5"
+	}
 }

@@ -4,7 +4,7 @@ import "../css/HelloWorld.css";
 import React from "react";
 import HelloPerson from "./HelloPerson/HelloPerson";
 
-const HelloWorld = () => {
+const HelloWorld: React.FC = () => {
 	return (
 		<div className="hw-container">
 			{" "}

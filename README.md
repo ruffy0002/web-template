@@ -1,5 +1,51 @@
-## Setup
+# React client + Node server for VSCode
 
+
+## Project intro
+---
+Create react app (CRA) project (v3.4.0) with a node server (socket.io) designed for out-of-the-box use in VSCode
+Project also contains an example of the advised file structure
+
+CRA was initially setup with instructions from [this post](https://www.sitepoint.com/react-with-typescript-best-practices/)
+Both react and node projects have the following installed:
+
+1. Typescript (Type-checking)
+2. Prettier (Enforced code formatting)
+3. ESLint (Code smells)
+
+Besides those from the post, additional customization include
+
+1. Typescript React snippets
+    - "ts", "tsp", "tsr" & "tsrp"
+    - These are used to generate the boiler plate for each React component (.tsx files)
+    - Please use "tsp" or "tsrp" to format the props in the correct way according to eslint restrictions
+
+2. Setting of env variables
+
+    - Default port 80
+    - Setting src/ folder as the NODE_PATH
+    - Default to no source maps generated (Without this turned off, your source code goes into production when packaged)
+    - Does not open browser on "start" being executed
+
+3. Removed CRA's default page (Cleaned up images used for this), added a Router page
+
+4. Added custom libraries
+
+    - [react-icons](https://react-icons.netlify.com/#/)
+    - [@elastic/eui](https://elastic.github.io/eui/#/) (Please use the React components in this library and its design system for consistent UI design)
+
+5. Stylelint (CSS Code smells, with rules turned off for prettier)
+
+6. Custom VSCode settings
+
+    - Includes a setting to auto run "yarn server" & "yarn client" if you install the 'Automatic Command Performer' VSCode extension
+
+7. Base page is default 100% height
+
+8. Opinated customization of prettier rules
+
+## Setup
+---
 Before starting, please install yarn globally onto your PC (Please do not use npm with this project)
 [https://yarnpkg.com/getting-started/install](https://yarnpkg.com/getting-started/install)
 
@@ -21,39 +67,3 @@ The following extensions are recommended as well:
 > If the project is throwing errors when compiling, go to each package.json and remove the '^' sign from the version number of _each_ package. This would compile the project to the versions of packages it was tested with (Instead of latest versions of the packages, though the yarn.lock file should prevent this)
 >
 > If your project is installing projects from a private repo for npm, delete the yarn.lock files
-
-## Project intro
-
-Customized Create react project (3.4.0) with settings from [this post](https://www.sitepoint.com/react-with-typescript-best-practices/)
-
-The project was also customized with the following:
-
-1. Typescript (Type-checking, generated from CRA settings)
-2. Prettier (Enforced code formatting)
-3. ESLint (Code smells)
-
-Besides those from the post, additional customization include
-
-1. Customization of prettier rules
-
-2. Setting of env variables
-
-    - Default port 80
-    - Setting src/ folder as the NODE_PATH
-    - Default to no source maps generated (Without this turned off, your source code goes into production when packaged)
-    - Does not open browser on "start" being executed
-
-3. Removed CRA's default page (Cleaned up images used for this), replaced with BrowserRouter
-
-4. Added custom libraries
-
-    - [react-icons](https://react-icons.netlify.com/#/)
-    - [@elastic/eui](https://elastic.github.io/eui/#/) (Please use the React components in this library and its design system for consistent UI design)
-
-5. Stylelint (CSS Code smells, with rules turned off for prettier)
-
-6. Custom VSCode settings
-
-    - Includes a setting to auto run "yarn server & yarn client" if you install the 'Automatic Command Performer' VSCode extension
-
-7. Base page is default 100% height
