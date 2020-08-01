@@ -19,7 +19,6 @@
 		"sourceType": "module"
 	},
 	"rules": {
-		"no-console": "off", // Allow consoles for server program
-		"prettier/prettier": ["error", { "endOfLine": "auto" }]
+		"no-console": "off" // Allow consoles for server program
 	}
 }

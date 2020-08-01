@@ -1,14 +1,15 @@
-import http from "http";
-import socketIo from "socket.io";
+import express from "express";
 
-const port = process.env.PORT || 4001;
-const server = http.createServer();
-const io = socketIo(server);
+import { NetworkConfig } from "shared/settings";
 
-io.on("connection", (socket) => {
-	socket.on("disconnect", () => {
-		/* Do nothing */
-	});
+const app = express();
+
+const testFunc = (): string => "Hi!";
+
+app.get("/", (req, res) => {
+	res.send("App works!!");
 });
 
-server.listen(port, () => console.log(`Listening on port ${port}`));
+app.listen(NetworkConfig.port, () => {
+	console.log("running server on from port:::::::" + NetworkConfig.port);
+});

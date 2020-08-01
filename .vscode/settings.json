@@ -16,5 +16,6 @@
 	"css.validate": false,
 	"less.validate": false,
 	"scss.validate": false,
+	"files.eol": "\n",
 	"commandrunner.commands": ["yarn fe", "yarn be"]
 }
